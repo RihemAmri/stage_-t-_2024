@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Charts with Navigation</title>
+    <link rel="stylesheet" href="tr1.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#"><img src="LOGO_TT_.jpg" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Se connecter</a></li>
+            <li><a href="#">Fixe Internet</a></li>
+            <li><a href="#">Assistant</a></li>
+        </ul>
+    </header>
+    <div class="chartDescription">
+        <p >Les graphiques ci-dessus présentent une analyse détaillée des ventes 
+            par produit pour la période étudiée. Chaque type de graphique offre 
+            un aperçu unique des performances des produits en fonction des ventes 
+            réalisées</p>
+    </div>
+   <div class="partchart">
+    <div id="chartContainer"></div>
+    <div id="tooltip" class="tooltip"></div>
+    <nav>
+        <button id="prevChart">Previous</button>
+        <button id="nextChart">Next</button>
+    </nav>
+    
+   
+</div> 
+<footer class="footer">
+    <ul class="footer-links">
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Actualités</a></li>
+        <li><a href="#">Accès à l'information</a></li><br><br>
+    </ul>
+    <p>&copy; © 2023 Tunisie Telecom - Tous droits réservés -Plan du site.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.4/d3.min.js"></script>
+<script>
+    console.log("D3.js loaded:", typeof d3 !== 'undefined');
+</script>
+    <script src="tr1.js"></script>
+</body>
+</html>
